@@ -17,32 +17,32 @@ public class Main
 		    int dur=sc.nextInt();
 		    if(dur>=1 && dur<=24)
 		    {
-		         System.out.println("List of payment options");
-                System.out.println("1) Visa card");
-                System.out.println("2) Rupay card");
-                System.out.println("3) Master card");
-                System.out.println("Choose an option");
-                int ch=sc.nextInt();
-                    while(ch>3 || ch<0)
-                    {
-                        System.out.println("Try Again");
-                        ch=sc.nextInt();
-                    }
-                if(dur>=5 && ch==1)
-                {
-                    double p=(dur*20)*0.80;
-                    System.out.printf("Dear "+name+" your bill amount is %.2f",p);
-                }
-                else if(dur>=5 && ch==2)
-                {
-                    double p=(dur*20)*0.85;
-                    System.out.printf("Dear "+name+" your bill amount is %.2f",p);
-                }
-                else
-                {
-                    double p=(dur*20);
-                    System.out.printf("Dear "+name+" your bill amount is %.2f",p);
-                }
+		        System.out.println("List of payment options");
+                	System.out.println("1) Visa card");
+                	System.out.println("2) Rupay card");
+                	System.out.println("3) Master card");
+                	System.out.println("Choose an option");
+                	int ch=sc.nextInt();
+                    	while(ch>3 || ch<0)
+                    	{
+                    	    System.out.println("Try Again");
+                    	    ch=sc.nextInt();
+                    	}
+               		if(dur>=5 && ch==1)
+                	{
+                    		double p=(dur*20)*0.80;
+                   		System.out.printf("Dear "+name+" your bill amount is %.2f",p);
+                	}
+                	else if(dur>=5 && ch==2)
+                	{
+                    		double p=(dur*20)*0.85;
+                    		System.out.printf("Dear "+name+" your bill amount is %.2f",p);
+                	}
+                	else
+                	{
+                    		double p=(dur*20);
+                    		System.out.printf("Dear "+name+" your bill amount is %.2f",p);
+                	}
 		    }
 		    else
 		    {
